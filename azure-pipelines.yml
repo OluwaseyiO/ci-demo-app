@@ -1,0 +1,15 @@
+trigger:
+- main
+
+pool:
+  vmImage: ubuntu-latest
+
+steps:
+- script: echo "Building Application..."
+  displayName: Build
+
+- script: echo "Running Tests..."
+  displayName: Test
+
+- script: echo "CI Successful!"
+  displayName: Complete
